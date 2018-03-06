@@ -8,11 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		5289DF6C204DE67900388B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289DF6B204DE67900388B5A /* AppDelegate.swift */; };
-		5289DF6E204DE67900388B5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289DF6D204DE67900388B5A /* ViewController.swift */; };
 		5289DF71204DE67900388B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF6F204DE67900388B5A /* Main.storyboard */; };
-		5289DF73204DE67900388B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF72204DE67900388B5A /* Assets.xcassets */; };
 		5289DF76204DE67A00388B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF74204DE67A00388B5A /* LaunchScreen.storyboard */; };
 		5289DF81204DE67A00388B5A /* aeroecoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289DF80204DE67A00388B5A /* aeroecoTests.swift */; };
+		52A4FE2C204DE850006D1045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A4FE2B204DE850006D1045 /* Assets.xcassets */; };
+		52A4FE34204DE8CB006D1045 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A4FE33204DE8CB006D1045 /* GoogleService-Info.plist */; };
+		52A4FE36204DE9A4006D1045 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE35204DE9A4006D1045 /* WelcomeVC.swift */; };
+		52A4FE38204DFE3E006D1045 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE37204DFE3E006D1045 /* LoginVC.swift */; };
+		52A4FE3A204E014B006D1045 /* SwitchboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE39204E014B006D1045 /* SwitchboardVC.swift */; };
+		52A4FE3F204E0D33006D1045 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE3E204E0D33006D1045 /* CircleView.swift */; };
+		52A4FE41204E0E0A006D1045 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE40204E0E0A006D1045 /* RoundedShadowButton.swift */; };
+		52A4FE43204E0E60006D1045 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE42204E0E60006D1045 /* UIViewExt.swift */; };
+		52A4FE45204E0EE4006D1045 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE44204E0EE4006D1045 /* RoundedShadowView.swift */; };
+		52A4FE47204E0F4D006D1045 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE46204E0F4D006D1045 /* UIViewControllerExt.swift */; };
+		52A4FE49204E0FA7006D1045 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE48204E0FA7006D1045 /* Alertable.swift */; };
+		52A4FE4B204E1007006D1045 /* FirebaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE4A204E1007006D1045 /* FirebaseDataService.swift */; };
+		52A4FE4D204E121B006D1045 /* ApiDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE4C204E121B006D1045 /* ApiDataService.swift */; };
+		52F5E869204EB56900DE859D /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E868204EB56900DE859D /* Globals.swift */; };
+		52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E86E204EBBB100DE859D /* AdminVC.swift */; };
+		52F5E872204EBC2A00DE859D /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E871204EBC2A00DE859D /* ManagerVC.swift */; };
+		52F5E875204EBCBC00DE859D /* TaskCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E874204EBCBC00DE859D /* TaskCardsVC.swift */; };
+		52F5E878204EBD2400DE859D /* ShippingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E877204EBD2400DE859D /* ShippingVC.swift */; };
+		52F5E87B204EBD6F00DE859D /* ReceivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E87A204EBD6F00DE859D /* ReceivingVC.swift */; };
+		52F5E880204EBF1E00DE859D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E87F204EBF1E00DE859D /* ProfileVC.swift */; };
+		52F5E882204EC06700DE859D /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E881204EC06700DE859D /* PreferencesVC.swift */; };
+		52F5E884204EC47900DE859D /* ReceiverTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E883204EC47900DE859D /* ReceiverTVC.swift */; };
+		52F5E886204EC6C400DE859D /* RampPartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E885204EC6C400DE859D /* RampPartVC.swift */; };
+		52F5E888204EC73600DE859D /* RampPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E887204EC73600DE859D /* RampPhotosVC.swift */; };
+		52F5E88A204EC78C00DE859D /* RampNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E889204EC78C00DE859D /* RampNotesVC.swift */; };
+		52F5E88C204EC7E100DE859D /* RampRemovalTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */; };
+		52F5E88E204EC84000DE859D /* RampChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E88D204EC84000DE859D /* RampChecklistVC.swift */; };
+		D002C0490CEA99D73809C12C /* Pods_aeroeco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9519993F94AE7EAD277197 /* Pods_aeroeco.framework */; };
+		E62CF02214A9A7BAB6C4E9AA /* Pods_aeroecoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF04E0C98A348E96B5A073F /* Pods_aeroecoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +53,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05AF60E5EB0D45D59CDC5309 /* Pods-aeroeco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.release.xcconfig"; sourceTree = "<group>"; };
+		2D2213BDF84C4055A63AD060 /* Pods-aeroecoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.release.xcconfig"; sourceTree = "<group>"; };
 		5289DF68204DE67800388B5A /* aeroeco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aeroeco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5289DF6B204DE67900388B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5289DF6D204DE67900388B5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5289DF70204DE67900388B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5289DF72204DE67900388B5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5289DF75204DE67A00388B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5289DF77204DE67A00388B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5289DF7C204DE67A00388B5A /* aeroecoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aeroecoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5289DF80204DE67A00388B5A /* aeroecoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aeroecoTests.swift; sourceTree = "<group>"; };
 		5289DF82204DE67A00388B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52A4FE2B204DE850006D1045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52A4FE33204DE8CB006D1045 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52A4FE35204DE9A4006D1045 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		52A4FE37204DFE3E006D1045 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		52A4FE39204E014B006D1045 /* SwitchboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchboardVC.swift; sourceTree = "<group>"; };
+		52A4FE3E204E0D33006D1045 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		52A4FE40204E0E0A006D1045 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		52A4FE42204E0E60006D1045 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		52A4FE44204E0EE4006D1045 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		52A4FE46204E0F4D006D1045 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		52A4FE48204E0FA7006D1045 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		52A4FE4A204E1007006D1045 /* FirebaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataService.swift; sourceTree = "<group>"; };
+		52A4FE4C204E121B006D1045 /* ApiDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataService.swift; sourceTree = "<group>"; };
+		52F5E868204EB56900DE859D /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		52F5E86E204EBBB100DE859D /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
+		52F5E871204EBC2A00DE859D /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
+		52F5E874204EBCBC00DE859D /* TaskCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardsVC.swift; sourceTree = "<group>"; };
+		52F5E877204EBD2400DE859D /* ShippingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingVC.swift; sourceTree = "<group>"; };
+		52F5E87A204EBD6F00DE859D /* ReceivingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingVC.swift; sourceTree = "<group>"; };
+		52F5E87F204EBF1E00DE859D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		52F5E881204EC06700DE859D /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
+		52F5E883204EC47900DE859D /* ReceiverTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTVC.swift; sourceTree = "<group>"; };
+		52F5E885204EC6C400DE859D /* RampPartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPartVC.swift; sourceTree = "<group>"; };
+		52F5E887204EC73600DE859D /* RampPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPhotosVC.swift; sourceTree = "<group>"; };
+		52F5E889204EC78C00DE859D /* RampNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampNotesVC.swift; sourceTree = "<group>"; };
+		52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampRemovalTagVC.swift; sourceTree = "<group>"; };
+		52F5E88D204EC84000DE859D /* RampChecklistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampChecklistVC.swift; sourceTree = "<group>"; };
+		79D70B25481B7782016140CD /* Pods-aeroeco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9519993F94AE7EAD277197 /* Pods_aeroeco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aeroeco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF04E0C98A348E96B5A073F /* Pods_aeroecoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aeroecoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5AD5DB4973C9B4643CF7A08 /* Pods-aeroecoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D002C0490CEA99D73809C12C /* Pods_aeroeco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62CF02214A9A7BAB6C4E9AA /* Pods_aeroecoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +122,8 @@
 				5289DF6A204DE67800388B5A /* aeroeco */,
 				5289DF7F204DE67A00388B5A /* aeroecoTests */,
 				5289DF69204DE67800388B5A /* Products */,
+				EB330A3C28444BA137113225 /* Pods */,
+				93D7CCD6B7B814D02A7F5EA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +139,19 @@
 		5289DF6A204DE67800388B5A /* aeroeco */ = {
 			isa = PBXGroup;
 			children = (
+				52A4FE2B204DE850006D1045 /* Assets.xcassets */,
 				5289DF6B204DE67900388B5A /* AppDelegate.swift */,
-				5289DF6D204DE67900388B5A /* ViewController.swift */,
+				52F5E868204EB56900DE859D /* Globals.swift */,
 				5289DF6F204DE67900388B5A /* Main.storyboard */,
-				5289DF72204DE67900388B5A /* Assets.xcassets */,
 				5289DF74204DE67A00388B5A /* LaunchScreen.storyboard */,
 				5289DF77204DE67A00388B5A /* Info.plist */,
+				52A4FE33204DE8CB006D1045 /* GoogleService-Info.plist */,
+				52A4FE32204DE89A006D1045 /* CONTROLLERS */,
+				52A4FE31204DE891006D1045 /* EXTENSIONS */,
+				52A4FE30204DE88A006D1045 /* MODELS */,
+				52A4FE2F204DE87F006D1045 /* PROTOCOLS */,
+				52A4FE2E204DE874006D1045 /* SERVICES */,
+				52A4FE2D204DE86C006D1045 /* VIEWS */,
 			);
 			path = aeroeco;
 			sourceTree = "<group>";
@@ -96,6 +165,164 @@
 			path = aeroecoTests;
 			sourceTree = "<group>";
 		};
+		52A4FE2D204DE86C006D1045 /* VIEWS */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE3E204E0D33006D1045 /* CircleView.swift */,
+				52A4FE40204E0E0A006D1045 /* RoundedShadowButton.swift */,
+				52A4FE44204E0EE4006D1045 /* RoundedShadowView.swift */,
+			);
+			path = VIEWS;
+			sourceTree = "<group>";
+		};
+		52A4FE2E204DE874006D1045 /* SERVICES */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE4A204E1007006D1045 /* FirebaseDataService.swift */,
+				52A4FE4C204E121B006D1045 /* ApiDataService.swift */,
+			);
+			path = SERVICES;
+			sourceTree = "<group>";
+		};
+		52A4FE2F204DE87F006D1045 /* PROTOCOLS */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE48204E0FA7006D1045 /* Alertable.swift */,
+			);
+			path = PROTOCOLS;
+			sourceTree = "<group>";
+		};
+		52A4FE30204DE88A006D1045 /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		52A4FE31204DE891006D1045 /* EXTENSIONS */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE42204E0E60006D1045 /* UIViewExt.swift */,
+				52A4FE46204E0F4D006D1045 /* UIViewControllerExt.swift */,
+			);
+			path = EXTENSIONS;
+			sourceTree = "<group>";
+		};
+		52A4FE32204DE89A006D1045 /* CONTROLLERS */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E86D204EBB8A00DE859D /* admin */,
+				52A4FE3C204E0235006D1045 /* auth */,
+				52F5E870204EBBFE00DE859D /* manager */,
+				52F5E87C204EBD9900DE859D /* rampReceiver */,
+				52F5E879204EBD5000DE859D /* receiving */,
+				52F5E876204EBCFE00DE859D /* shipper */,
+				52A4FE3D204E0250006D1045 /* switchboard */,
+				52F5E873204EBC9300DE859D /* TaskCards */,
+				52A4FE3B204E021F006D1045 /* welcome */,
+			);
+			path = CONTROLLERS;
+			sourceTree = "<group>";
+		};
+		52A4FE3B204E021F006D1045 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE35204DE9A4006D1045 /* WelcomeVC.swift */,
+			);
+			path = welcome;
+			sourceTree = "<group>";
+		};
+		52A4FE3C204E0235006D1045 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE37204DFE3E006D1045 /* LoginVC.swift */,
+				52F5E87F204EBF1E00DE859D /* ProfileVC.swift */,
+				52F5E881204EC06700DE859D /* PreferencesVC.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		52A4FE3D204E0250006D1045 /* switchboard */ = {
+			isa = PBXGroup;
+			children = (
+				52A4FE39204E014B006D1045 /* SwitchboardVC.swift */,
+			);
+			path = switchboard;
+			sourceTree = "<group>";
+		};
+		52F5E86D204EBB8A00DE859D /* admin */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E86E204EBBB100DE859D /* AdminVC.swift */,
+			);
+			path = admin;
+			sourceTree = "<group>";
+		};
+		52F5E870204EBBFE00DE859D /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E871204EBC2A00DE859D /* ManagerVC.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		52F5E873204EBC9300DE859D /* TaskCards */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E874204EBCBC00DE859D /* TaskCardsVC.swift */,
+			);
+			path = TaskCards;
+			sourceTree = "<group>";
+		};
+		52F5E876204EBCFE00DE859D /* shipper */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E877204EBD2400DE859D /* ShippingVC.swift */,
+			);
+			path = shipper;
+			sourceTree = "<group>";
+		};
+		52F5E879204EBD5000DE859D /* receiving */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E87A204EBD6F00DE859D /* ReceivingVC.swift */,
+			);
+			path = receiving;
+			sourceTree = "<group>";
+		};
+		52F5E87C204EBD9900DE859D /* rampReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				52F5E883204EC47900DE859D /* ReceiverTVC.swift */,
+				52F5E885204EC6C400DE859D /* RampPartVC.swift */,
+				52F5E887204EC73600DE859D /* RampPhotosVC.swift */,
+				52F5E889204EC78C00DE859D /* RampNotesVC.swift */,
+				52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */,
+				52F5E88D204EC84000DE859D /* RampChecklistVC.swift */,
+			);
+			path = rampReceiver;
+			sourceTree = "<group>";
+		};
+		93D7CCD6B7B814D02A7F5EA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A9519993F94AE7EAD277197 /* Pods_aeroeco.framework */,
+				DEF04E0C98A348E96B5A073F /* Pods_aeroecoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB330A3C28444BA137113225 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79D70B25481B7782016140CD /* Pods-aeroeco.debug.xcconfig */,
+				05AF60E5EB0D45D59CDC5309 /* Pods-aeroeco.release.xcconfig */,
+				F5AD5DB4973C9B4643CF7A08 /* Pods-aeroecoTests.debug.xcconfig */,
+				2D2213BDF84C4055A63AD060 /* Pods-aeroecoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5289DF85204DE67A00388B5A /* Build configuration list for PBXNativeTarget "aeroeco" */;
 			buildPhases = (
+				C5C68F890FB22AA12EF2CDEE /* [CP] Check Pods Manifest.lock */,
 				5289DF64204DE67800388B5A /* Sources */,
 				5289DF65204DE67800388B5A /* Frameworks */,
 				5289DF66204DE67800388B5A /* Resources */,
+				FBD6F34D2EB7BF15398DAC76 /* [CP] Embed Pods Frameworks */,
+				4D6617BF4012E4D7ADA8004C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5289DF88204DE67A00388B5A /* Build configuration list for PBXNativeTarget "aeroecoTests" */;
 			buildPhases = (
+				30AF7CD715126DC5EA54785C /* [CP] Check Pods Manifest.lock */,
 				5289DF78204DE67A00388B5A /* Sources */,
 				5289DF79204DE67A00388B5A /* Frameworks */,
 				5289DF7A204DE67A00388B5A /* Resources */,
+				0CB38F37505CB9B377EEED3D /* [CP] Embed Pods Frameworks */,
+				A93349A03139A35DAE0BE1F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,7 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5289DF76204DE67A00388B5A /* LaunchScreen.storyboard in Resources */,
-				5289DF73204DE67900388B5A /* Assets.xcassets in Resources */,
+				52A4FE34204DE8CB006D1045 /* GoogleService-Info.plist in Resources */,
+				52A4FE2C204DE850006D1045 /* Assets.xcassets in Resources */,
 				5289DF71204DE67900388B5A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,13 +428,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CB38F37505CB9B377EEED3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30AF7CD715126DC5EA54785C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aeroecoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D6617BF4012E4D7ADA8004C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A93349A03139A35DAE0BE1F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5C68F890FB22AA12EF2CDEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aeroeco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD6F34D2EB7BF15398DAC76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cent/Cent.framework",
+				"${BUILT_PRODUCTS_DIR}/Dollar/Dollar.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dollar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5289DF64204DE67800388B5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5289DF6E204DE67900388B5A /* ViewController.swift in Sources */,
+				52F5E880204EBF1E00DE859D /* ProfileVC.swift in Sources */,
+				52F5E878204EBD2400DE859D /* ShippingVC.swift in Sources */,
+				52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */,
+				52A4FE4D204E121B006D1045 /* ApiDataService.swift in Sources */,
+				52A4FE43204E0E60006D1045 /* UIViewExt.swift in Sources */,
 				5289DF6C204DE67900388B5A /* AppDelegate.swift in Sources */,
+				52A4FE47204E0F4D006D1045 /* UIViewControllerExt.swift in Sources */,
+				52F5E875204EBCBC00DE859D /* TaskCardsVC.swift in Sources */,
+				52A4FE3F204E0D33006D1045 /* CircleView.swift in Sources */,
+				52A4FE49204E0FA7006D1045 /* Alertable.swift in Sources */,
+				52F5E87B204EBD6F00DE859D /* ReceivingVC.swift in Sources */,
+				52F5E88E204EC84000DE859D /* RampChecklistVC.swift in Sources */,
+				52F5E882204EC06700DE859D /* PreferencesVC.swift in Sources */,
+				52F5E869204EB56900DE859D /* Globals.swift in Sources */,
+				52A4FE3A204E014B006D1045 /* SwitchboardVC.swift in Sources */,
+				52F5E88C204EC7E100DE859D /* RampRemovalTagVC.swift in Sources */,
+				52A4FE45204E0EE4006D1045 /* RoundedShadowView.swift in Sources */,
+				52F5E886204EC6C400DE859D /* RampPartVC.swift in Sources */,
+				52F5E88A204EC78C00DE859D /* RampNotesVC.swift in Sources */,
+				52A4FE36204DE9A4006D1045 /* WelcomeVC.swift in Sources */,
+				52F5E888204EC73600DE859D /* RampPhotosVC.swift in Sources */,
+				52A4FE4B204E1007006D1045 /* FirebaseDataService.swift in Sources */,
+				52A4FE38204DFE3E006D1045 /* LoginVC.swift in Sources */,
+				52F5E872204EBC2A00DE859D /* ManagerVC.swift in Sources */,
+				52A4FE41204E0E0A006D1045 /* RoundedShadowButton.swift in Sources */,
+				52F5E884204EC47900DE859D /* ReceiverTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +727,7 @@
 		};
 		5289DF86204DE67A00388B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D70B25481B7782016140CD /* Pods-aeroeco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,12 +737,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uaminc.aeroeco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5289DF87204DE67A00388B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AF60E5EB0D45D59CDC5309 /* Pods-aeroeco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,12 +753,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.uaminc.aeroeco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		5289DF89204DE67A00388B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AD5DB4973C9B4643CF7A08 /* Pods-aeroecoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +777,7 @@
 		};
 		5289DF8A204DE67A00388B5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D2213BDF84C4055A63AD060 /* Pods-aeroecoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
