@@ -24,6 +24,10 @@
 		52A4FE49204E0FA7006D1045 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE48204E0FA7006D1045 /* Alertable.swift */; };
 		52A4FE4B204E1007006D1045 /* FirebaseDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE4A204E1007006D1045 /* FirebaseDataService.swift */; };
 		52A4FE4D204E121B006D1045 /* ApiDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE4C204E121B006D1045 /* ApiDataService.swift */; };
+		52DAEACF205009C2008BB38A /* Part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAEACE205009C2008BB38A /* Part.swift */; };
+		52DAEAD120501330008BB38A /* ReceiverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAEAD020501330008BB38A /* ReceiverVC.swift */; };
+		52DAEAD3205015F0008BB38A /* RampPartsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAEAD2205015F0008BB38A /* RampPartsCell.swift */; };
+		52DAEAD520501D21008BB38A /* ReceiverTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DAEAD420501D21008BB38A /* ReceiverTabController.swift */; };
 		52F5E869204EB56900DE859D /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E868204EB56900DE859D /* Globals.swift */; };
 		52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E86E204EBBB100DE859D /* AdminVC.swift */; };
 		52F5E872204EBC2A00DE859D /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E871204EBC2A00DE859D /* ManagerVC.swift */; };
@@ -32,7 +36,6 @@
 		52F5E87B204EBD6F00DE859D /* ReceivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E87A204EBD6F00DE859D /* ReceivingVC.swift */; };
 		52F5E880204EBF1E00DE859D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E87F204EBF1E00DE859D /* ProfileVC.swift */; };
 		52F5E882204EC06700DE859D /* PreferencesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E881204EC06700DE859D /* PreferencesVC.swift */; };
-		52F5E884204EC47900DE859D /* ReceiverTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E883204EC47900DE859D /* ReceiverTVC.swift */; };
 		52F5E886204EC6C400DE859D /* RampPartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E885204EC6C400DE859D /* RampPartVC.swift */; };
 		52F5E888204EC73600DE859D /* RampPhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E887204EC73600DE859D /* RampPhotosVC.swift */; };
 		52F5E88A204EC78C00DE859D /* RampNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E889204EC78C00DE859D /* RampNotesVC.swift */; };
@@ -76,6 +79,10 @@
 		52A4FE48204E0FA7006D1045 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		52A4FE4A204E1007006D1045 /* FirebaseDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataService.swift; sourceTree = "<group>"; };
 		52A4FE4C204E121B006D1045 /* ApiDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataService.swift; sourceTree = "<group>"; };
+		52DAEACE205009C2008BB38A /* Part.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Part.swift; sourceTree = "<group>"; };
+		52DAEAD020501330008BB38A /* ReceiverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverVC.swift; sourceTree = "<group>"; };
+		52DAEAD2205015F0008BB38A /* RampPartsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPartsCell.swift; sourceTree = "<group>"; };
+		52DAEAD420501D21008BB38A /* ReceiverTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTabController.swift; sourceTree = "<group>"; };
 		52F5E868204EB56900DE859D /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		52F5E86E204EBBB100DE859D /* AdminVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminVC.swift; sourceTree = "<group>"; };
 		52F5E871204EBC2A00DE859D /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
@@ -84,7 +91,6 @@
 		52F5E87A204EBD6F00DE859D /* ReceivingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivingVC.swift; sourceTree = "<group>"; };
 		52F5E87F204EBF1E00DE859D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		52F5E881204EC06700DE859D /* PreferencesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesVC.swift; sourceTree = "<group>"; };
-		52F5E883204EC47900DE859D /* ReceiverTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverTVC.swift; sourceTree = "<group>"; };
 		52F5E885204EC6C400DE859D /* RampPartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPartVC.swift; sourceTree = "<group>"; };
 		52F5E887204EC73600DE859D /* RampPhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPhotosVC.swift; sourceTree = "<group>"; };
 		52F5E889204EC78C00DE859D /* RampNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampNotesVC.swift; sourceTree = "<group>"; };
@@ -195,6 +201,7 @@
 		52A4FE30204DE88A006D1045 /* MODELS */ = {
 			isa = PBXGroup;
 			children = (
+				52DAEACE205009C2008BB38A /* Part.swift */,
 			);
 			path = MODELS;
 			sourceTree = "<group>";
@@ -293,12 +300,14 @@
 		52F5E87C204EBD9900DE859D /* rampReceiver */ = {
 			isa = PBXGroup;
 			children = (
-				52F5E883204EC47900DE859D /* ReceiverTVC.swift */,
 				52F5E885204EC6C400DE859D /* RampPartVC.swift */,
 				52F5E887204EC73600DE859D /* RampPhotosVC.swift */,
 				52F5E889204EC78C00DE859D /* RampNotesVC.swift */,
 				52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */,
 				52F5E88D204EC84000DE859D /* RampChecklistVC.swift */,
+				52DAEAD020501330008BB38A /* ReceiverVC.swift */,
+				52DAEAD2205015F0008BB38A /* RampPartsCell.swift */,
+				52DAEAD420501D21008BB38A /* ReceiverTabController.swift */,
 			);
 			path = rampReceiver;
 			sourceTree = "<group>";
@@ -552,8 +561,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F5E880204EBF1E00DE859D /* ProfileVC.swift in Sources */,
+				52DAEAD120501330008BB38A /* ReceiverVC.swift in Sources */,
 				52F5E878204EBD2400DE859D /* ShippingVC.swift in Sources */,
 				52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */,
+				52DAEAD3205015F0008BB38A /* RampPartsCell.swift in Sources */,
 				52A4FE4D204E121B006D1045 /* ApiDataService.swift in Sources */,
 				52A4FE43204E0E60006D1045 /* UIViewExt.swift in Sources */,
 				5289DF6C204DE67900388B5A /* AppDelegate.swift in Sources */,
@@ -566,7 +577,9 @@
 				52F5E882204EC06700DE859D /* PreferencesVC.swift in Sources */,
 				52F5E869204EB56900DE859D /* Globals.swift in Sources */,
 				52A4FE3A204E014B006D1045 /* SwitchboardVC.swift in Sources */,
+				52DAEACF205009C2008BB38A /* Part.swift in Sources */,
 				52F5E88C204EC7E100DE859D /* RampRemovalTagVC.swift in Sources */,
+				52DAEAD520501D21008BB38A /* ReceiverTabController.swift in Sources */,
 				52A4FE45204E0EE4006D1045 /* RoundedShadowView.swift in Sources */,
 				52F5E886204EC6C400DE859D /* RampPartVC.swift in Sources */,
 				52F5E88A204EC78C00DE859D /* RampNotesVC.swift in Sources */,
@@ -576,7 +589,6 @@
 				52A4FE38204DFE3E006D1045 /* LoginVC.swift in Sources */,
 				52F5E872204EBC2A00DE859D /* ManagerVC.swift in Sources */,
 				52A4FE41204E0E0A006D1045 /* RoundedShadowButton.swift in Sources */,
-				52F5E884204EC47900DE859D /* ReceiverTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

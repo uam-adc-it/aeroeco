@@ -17,6 +17,15 @@ class SwitchboardVC: UIViewController {
     //MARK: PROPERTIES
     let defaults = UserDefaults.standard
     
+    @IBOutlet weak var btnProfile: UIImageView!
+    @IBOutlet weak var btnPrefs: UIImageView!
+    @IBOutlet weak var btnManager: UIImageView!
+    @IBOutlet weak var btnAdmin: UIImageView!
+    @IBOutlet weak var btnTaskCards: UIImageView!
+    @IBOutlet weak var btnRamp: UIImageView!
+    @IBOutlet weak var btnWarehouse: UIImageView!
+    @IBOutlet weak var btnShipping: UIImageView!
+    
     //MARK: METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
