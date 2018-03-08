@@ -52,7 +52,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             "password": passwordTextField.text!
         ]
         
-        Alamofire.request("https://www.my-uam.com/swift/authenticate", method: .post, parameters: parameters).responseJSON { [weak self]
+        Alamofire.request("https://staging.movieplanes.com/swift/authenticate", method: .post, parameters: parameters).responseJSON { [weak self]
             response in
             print(response)
             if(response.result.isSuccess) {

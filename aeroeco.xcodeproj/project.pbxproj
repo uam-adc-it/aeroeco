@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46126382B814EB03EDEE7A43 /* Pods_aeroecoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99AFC7D5E76A5A3BD1A672F /* Pods_aeroecoTests.framework */; };
+		5282E8BF2051516200AAD142 /* PartsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282E8BE2051516200AAD142 /* PartsRouter.swift */; };
 		5289DF6C204DE67900388B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289DF6B204DE67900388B5A /* AppDelegate.swift */; };
 		5289DF71204DE67900388B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF6F204DE67900388B5A /* Main.storyboard */; };
 		5289DF76204DE67A00388B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF74204DE67A00388B5A /* LaunchScreen.storyboard */; };
@@ -41,8 +43,7 @@
 		52F5E88A204EC78C00DE859D /* RampNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E889204EC78C00DE859D /* RampNotesVC.swift */; };
 		52F5E88C204EC7E100DE859D /* RampRemovalTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */; };
 		52F5E88E204EC84000DE859D /* RampChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E88D204EC84000DE859D /* RampChecklistVC.swift */; };
-		D002C0490CEA99D73809C12C /* Pods_aeroeco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9519993F94AE7EAD277197 /* Pods_aeroeco.framework */; };
-		E62CF02214A9A7BAB6C4E9AA /* Pods_aeroecoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF04E0C98A348E96B5A073F /* Pods_aeroecoTests.framework */; };
+		C8BEA2F86A0989FD5C7A410F /* Pods_aeroeco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E346BAD018DE3C64E5BBD963 /* Pods_aeroeco.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05AF60E5EB0D45D59CDC5309 /* Pods-aeroeco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.release.xcconfig"; sourceTree = "<group>"; };
-		2D2213BDF84C4055A63AD060 /* Pods-aeroecoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5282E8BE2051516200AAD142 /* PartsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsRouter.swift; sourceTree = "<group>"; };
 		5289DF68204DE67800388B5A /* aeroeco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aeroeco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5289DF6B204DE67900388B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5289DF70204DE67900388B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,10 +96,12 @@
 		52F5E889204EC78C00DE859D /* RampNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampNotesVC.swift; sourceTree = "<group>"; };
 		52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampRemovalTagVC.swift; sourceTree = "<group>"; };
 		52F5E88D204EC84000DE859D /* RampChecklistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampChecklistVC.swift; sourceTree = "<group>"; };
-		79D70B25481B7782016140CD /* Pods-aeroeco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.debug.xcconfig"; sourceTree = "<group>"; };
-		8A9519993F94AE7EAD277197 /* Pods_aeroeco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aeroeco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEF04E0C98A348E96B5A073F /* Pods_aeroecoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aeroecoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5AD5DB4973C9B4643CF7A08 /* Pods-aeroecoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7F1953AE2DDC6D0F7E1D06A5 /* Pods-aeroeco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.debug.xcconfig"; sourceTree = "<group>"; };
+		8E3C710511832CF669D668DE /* Pods-aeroeco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.release.xcconfig"; sourceTree = "<group>"; };
+		B13886BE2188C698DF7F8EB5 /* Pods-aeroecoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E346BAD018DE3C64E5BBD963 /* Pods_aeroeco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aeroeco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C8F411E30707EC0EF0CE7F /* Pods-aeroecoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E99AFC7D5E76A5A3BD1A672F /* Pods_aeroecoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_aeroecoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D002C0490CEA99D73809C12C /* Pods_aeroeco.framework in Frameworks */,
+				C8BEA2F86A0989FD5C7A410F /* Pods_aeroeco.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,21 +117,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E62CF02214A9A7BAB6C4E9AA /* Pods_aeroecoTests.framework in Frameworks */,
+				46126382B814EB03EDEE7A43 /* Pods_aeroecoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AD206ED9173492DFAD8C4FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E346BAD018DE3C64E5BBD963 /* Pods_aeroeco.framework */,
+				E99AFC7D5E76A5A3BD1A672F /* Pods_aeroecoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5289DF5F204DE67700388B5A = {
 			isa = PBXGroup;
 			children = (
 				5289DF6A204DE67800388B5A /* aeroeco */,
 				5289DF7F204DE67A00388B5A /* aeroecoTests */,
 				5289DF69204DE67800388B5A /* Products */,
-				EB330A3C28444BA137113225 /* Pods */,
-				93D7CCD6B7B814D02A7F5EA5 /* Frameworks */,
+				6D9A8990669923272A57FFF8 /* Pods */,
+				0AD206ED9173492DFAD8C4FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -186,6 +197,7 @@
 			children = (
 				52A4FE4A204E1007006D1045 /* FirebaseDataService.swift */,
 				52A4FE4C204E121B006D1045 /* ApiDataService.swift */,
+				5282E8BE2051516200AAD142 /* PartsRouter.swift */,
 			);
 			path = SERVICES;
 			sourceTree = "<group>";
@@ -312,22 +324,13 @@
 			path = rampReceiver;
 			sourceTree = "<group>";
 		};
-		93D7CCD6B7B814D02A7F5EA5 /* Frameworks */ = {
+		6D9A8990669923272A57FFF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8A9519993F94AE7EAD277197 /* Pods_aeroeco.framework */,
-				DEF04E0C98A348E96B5A073F /* Pods_aeroecoTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EB330A3C28444BA137113225 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				79D70B25481B7782016140CD /* Pods-aeroeco.debug.xcconfig */,
-				05AF60E5EB0D45D59CDC5309 /* Pods-aeroeco.release.xcconfig */,
-				F5AD5DB4973C9B4643CF7A08 /* Pods-aeroecoTests.debug.xcconfig */,
-				2D2213BDF84C4055A63AD060 /* Pods-aeroecoTests.release.xcconfig */,
+				7F1953AE2DDC6D0F7E1D06A5 /* Pods-aeroeco.debug.xcconfig */,
+				8E3C710511832CF669D668DE /* Pods-aeroeco.release.xcconfig */,
+				B13886BE2188C698DF7F8EB5 /* Pods-aeroecoTests.debug.xcconfig */,
+				E7C8F411E30707EC0EF0CE7F /* Pods-aeroecoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -339,12 +342,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5289DF85204DE67A00388B5A /* Build configuration list for PBXNativeTarget "aeroeco" */;
 			buildPhases = (
-				C5C68F890FB22AA12EF2CDEE /* [CP] Check Pods Manifest.lock */,
+				CE2D344322E8B5774D6353AE /* [CP] Check Pods Manifest.lock */,
 				5289DF64204DE67800388B5A /* Sources */,
 				5289DF65204DE67800388B5A /* Frameworks */,
 				5289DF66204DE67800388B5A /* Resources */,
-				FBD6F34D2EB7BF15398DAC76 /* [CP] Embed Pods Frameworks */,
-				4D6617BF4012E4D7ADA8004C /* [CP] Copy Pods Resources */,
+				715D331842A6B6452457971D /* [CP] Embed Pods Frameworks */,
+				A40476FCA5CB2D6C56963E9E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,12 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5289DF88204DE67A00388B5A /* Build configuration list for PBXNativeTarget "aeroecoTests" */;
 			buildPhases = (
-				30AF7CD715126DC5EA54785C /* [CP] Check Pods Manifest.lock */,
+				522608CE24845AA1C43BC7AF /* [CP] Check Pods Manifest.lock */,
 				5289DF78204DE67A00388B5A /* Sources */,
 				5289DF79204DE67A00388B5A /* Frameworks */,
 				5289DF7A204DE67A00388B5A /* Resources */,
-				0CB38F37505CB9B377EEED3D /* [CP] Embed Pods Frameworks */,
-				A93349A03139A35DAE0BE1F9 /* [CP] Copy Pods Resources */,
+				FFD0B3F316136BB1E7641985 /* [CP] Embed Pods Frameworks */,
+				67E3F6DC3A89A40944AA5673 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -438,22 +441,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0CB38F37505CB9B377EEED3D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30AF7CD715126DC5EA54785C /* [CP] Check Pods Manifest.lock */ = {
+		522608CE24845AA1C43BC7AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,22 +459,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4D6617BF4012E4D7ADA8004C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A93349A03139A35DAE0BE1F9 /* [CP] Copy Pods Resources */ = {
+		67E3F6DC3A89A40944AA5673 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -501,25 +474,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5C68F890FB22AA12EF2CDEE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-aeroeco-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBD6F34D2EB7BF15398DAC76 /* [CP] Embed Pods Frameworks */ = {
+		715D331842A6B6452457971D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -553,6 +508,54 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A40476FCA5CB2D6C56963E9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2D344322E8B5774D6353AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-aeroeco-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD0B3F316136BB1E7641985 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -565,6 +568,7 @@
 				52F5E878204EBD2400DE859D /* ShippingVC.swift in Sources */,
 				52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */,
 				52DAEAD3205015F0008BB38A /* RampPartsCell.swift in Sources */,
+				5282E8BF2051516200AAD142 /* PartsRouter.swift in Sources */,
 				52A4FE4D204E121B006D1045 /* ApiDataService.swift in Sources */,
 				52A4FE43204E0E60006D1045 /* UIViewExt.swift in Sources */,
 				5289DF6C204DE67900388B5A /* AppDelegate.swift in Sources */,
@@ -739,7 +743,7 @@
 		};
 		5289DF86204DE67A00388B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79D70B25481B7782016140CD /* Pods-aeroeco.debug.xcconfig */;
+			baseConfigurationReference = 7F1953AE2DDC6D0F7E1D06A5 /* Pods-aeroeco.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -755,7 +759,7 @@
 		};
 		5289DF87204DE67A00388B5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05AF60E5EB0D45D59CDC5309 /* Pods-aeroeco.release.xcconfig */;
+			baseConfigurationReference = 8E3C710511832CF669D668DE /* Pods-aeroeco.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -771,7 +775,7 @@
 		};
 		5289DF89204DE67A00388B5A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5AD5DB4973C9B4643CF7A08 /* Pods-aeroecoTests.debug.xcconfig */;
+			baseConfigurationReference = B13886BE2188C698DF7F8EB5 /* Pods-aeroecoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -789,7 +793,7 @@
 		};
 		5289DF8A204DE67A00388B5A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D2213BDF84C4055A63AD060 /* Pods-aeroecoTests.release.xcconfig */;
+			baseConfigurationReference = E7C8F411E30707EC0EF0CE7F /* Pods-aeroecoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

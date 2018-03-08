@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,10 +23,70 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.rowHeight = 80
+        tableView.estimatedRowHeight = 80
         
+        //TEST
+        ApiDataService.instance.printAllParts()
+        //END TEST
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadParts()
     }
     
     //MARK: DATA RETRIEVAL METHODS
+    func loadParts() {
+        //ApiDataService.instance.printAllParts()
+        let part1 = Part()
+        part1.partNum = "B51-000-0201"
+        part1.cage = "Cage"
+        part1.can_8130 = true
+        part1.cond_id = 1
+        part1.condition = "AR"
+        part1.db_id = "99000"
+        part1.description = "Part on a Plane"
+        part1.has_amm = true
+        part1.is_esd = true
+        part1.is_hazmat = false
+        part1.is_priority = false
+        part1.is_received = false
+        part1.is_selected = false
+        part1.loc_id = 2
+        part1.location = "Kitchen Table"
+        part1.mechanic = "Jon Gravois"
+        part1.msn = "12345"
+        part1.received = "2018-03-08"
+        part1.receiver = "James Kachel"
+        part1.tail = "N117UA"
+        
+        let part2 = Part()
+        part2.partNum = "B52-000-0201"
+        part2.cage = "Cage"
+        part2.can_8130 = true
+        part2.cond_id = 1
+        part2.condition = "AR"
+        part2.db_id = "99001"
+        part2.description = "Part on a Ramp"
+        part2.has_amm = false
+        part2.is_esd = false
+        part2.is_hazmat = true
+        part2.is_priority = true
+        part2.is_received = false
+        part2.is_selected = false
+        part2.loc_id = 2
+        part2.location = "Kitchen Table"
+        part2.mechanic = "Jon Gravois"
+        part2.msn = "12345"
+        part2.received = "2018-03-08"
+        part2.receiver = "James Kachel"
+        part2.tail = "N117UA"
+        
+        partsArray = [part1, part2]
+        
+        self.tableView.reloadData()
+    }
     
     
     //MARK: DELEGATE METHODS
@@ -56,6 +118,8 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let ammCheck = partsArray[indexPath.row].has_amm
         let hazmatCheck = partsArray[indexPath.row].is_hazmat
         let esdCheck = partsArray[indexPath.row].is_esd
+        
+        
         
         cell.lblPartNum.text = partsArray[indexPath.row].partNum
         cell.lblDesc.text = partsArray[indexPath.row].description

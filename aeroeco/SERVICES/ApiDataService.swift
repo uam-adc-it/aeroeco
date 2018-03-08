@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import Alamofire
+
+class ApiDataService {
+    static let instance = ApiDataService()
+    
+    func printAllParts() -> Void {
+        Alamofire.request(ApiRouter.getAllParts()).responseString { response in
+            if let receivedString = response.result.value {
+                print(receivedString)
+            }
+        }
+    }
+}
