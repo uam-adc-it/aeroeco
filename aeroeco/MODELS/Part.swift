@@ -33,24 +33,23 @@ class Part {
     
     required init() {}
     
-    
     required init?(json: [String: Any]) {
         guard
                 let db_id = json["db_id"] as? String,
-                //let can_8130 = json["can_8130"] as? Bool
+                let can_8130 = json["can_8130"] as? Bool,
                 let description = json["description"] as? String,
-                //let has_amm = json["has_amm"] as? Bool,
-                //let is_esd = json["is_esd"] as? Bool,
-                //let is_hazmat = json["is_hazmat"] as? Bool,
-                //let is_priority = json["is_priority"] as Bool,
-                //let is_selected = json["is_selected"] as? Bool,
-                //let is_received = json["is_received"] as? Bool,
+                let has_amm = json["has_amm"] as? Bool,
+                let is_esd = json["is_esd"] as? Bool,
+                let is_hazmat = json["is_hazmat"] as? Bool,
+                let is_priority = json["is_priority"] as? Bool,
+                let is_selected = json["is_selected"] as? Bool,
+                let is_received = json["is_received"] as? Bool,
                 let cage = json["cage"] as? String,
                 let msn = json["msn"] as? String,
                 let partNum = json["partNum"] as? String,
-                //let loc_id = json["loc_id"] as? Int,
+                let loc_id = json["loc_id"] as? Int,
                 let location = json["location"] as? String,
-                //let cond_id = json["cond_id"] as? Int,
+                let cond_id = json["cond_id"] as? Int,
                 let condition = json["condition"] as? String,
                 let tail = json["tail"] as? String,
                 let craft = json["craft"] as? String,
@@ -63,11 +62,20 @@ class Part {
             }
         
                 self.db_id = db_id
+                self.can_8130 = can_8130
                 self.description = description
+                self.has_amm = has_amm
+                self.is_esd = is_esd
+                self.is_hazmat = is_hazmat
+                self.is_priority = is_priority
+                self.is_selected = is_selected
+                self.is_received = is_received
                 self.cage = cage
                 self.msn = msn
                 self.partNum = partNum
+                self.loc_id = loc_id
                 self.location = location
+                self.cond_id = cond_id
                 self.condition = condition
                 self.tail = tail
                 self.craft = craft
