@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SVProgressHUD
 
 class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -19,6 +20,8 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Projects", style: .plain, target: self, action: #selector(btnProjectsPressed(_:)))
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -27,8 +30,8 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.estimatedRowHeight = 80
         
         //TEST
-        print("DEBUGGER")
-        ApiDataService.instance.printAllParts()
+        //print("DEBUGGER")
+        //ApiDataService.instance.printAllParts()
         //END TEST
     }
     
@@ -37,18 +40,18 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         loadParts()
     }
     
+    @IBAction func btnProjectsPressed(_ sender: Any) {
+        SVProgressHUD.show()
+    }
+    
     //MARK: DATA RETRIEVAL METHODS
     func loadParts() {
         ApiDataService.instance.fetchAllParts() {
             result in
-            print("FETCHED")
-            print(result)
             guard result.error == nil else {
                 if let error = result.error {
                     self.handleLoadPartsError(error)
                 }
-                
-                
                 return
             }
             if let fetchedParts = result.value {
@@ -105,28 +108,28 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         cell.lblDesc.text = partsArray[indexPath.row].description
         cell.lblMSN.text = partsArray[indexPath.row].msn
         
-        if ammCheck != nil {
-            cell.lblAMM.textColor = UIColor.green
-        }
-        else {
-            cell.lblAMM.textColor = UIColor.lightGray
-        }
-        
-        if priorityCheck != nil {
+        if priorityCheck! {
             cell.imgPriority.image = UIImage(named: "priority")
         }
         else {
             cell.imgPriority.image = UIImage(named: "no_priority")
         }
         
-        if hazmatCheck != nil {
+        if ammCheck! {
+            cell.lblAMM.textColor = UIColor.green
+        }
+        else {
+            cell.lblAMM.textColor = UIColor.lightGray
+        }
+        
+        if hazmatCheck! {
             cell.imgHazmat.image = UIImage(named: "hazmat")
         }
         else {
             cell.imgHazmat.image = UIImage(named: "hazmat_not")
         }
         
-        if esdCheck != nil {
+        if esdCheck! {
             cell.imgESD.image = UIImage(named: "esd")
         }
         else {

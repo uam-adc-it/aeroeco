@@ -46,7 +46,7 @@ class Part {
         let is_selected = json["is_selected"] as? Bool
         let is_received = json["is_received"] as? Bool
         let cage = json["cage"] as? String
-        let msn = json["msn"] as? String
+        let msn = json["serial_number"] as? String
         let location = json["location"] as? String
         let condition = json["condition"] as? String
         let tail = json["tail"] as? String

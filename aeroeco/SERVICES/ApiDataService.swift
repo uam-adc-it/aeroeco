@@ -56,8 +56,6 @@ class ApiDataService {
                 parts.append(part)
             }
         }
-        print("From Data Service")
-        print(parts)
         return .success(parts)
     }
 }
