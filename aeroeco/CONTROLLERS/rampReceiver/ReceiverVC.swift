@@ -21,6 +21,7 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "N118UA"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Projects", style: .plain, target: self, action: #selector(btnProjectsPressed(_:)))
 
         tableView.delegate = self
@@ -41,7 +42,8 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     @IBAction func btnProjectsPressed(_ sender: Any) {
-        SVProgressHUD.show()
+        //SVProgressHUD.show()
+        performSegue(withIdentifier: "goToProjects", sender: self)
     }
     
     //MARK: DATA RETRIEVAL METHODS

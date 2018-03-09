@@ -24,6 +24,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     var userArray = ["Universal Asset Management"]
     let defaults = UserDefaults.standard
     
+    @IBAction func btnProjects(_ sender: Any) {
+    }
     @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
