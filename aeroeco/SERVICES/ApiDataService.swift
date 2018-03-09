@@ -44,19 +44,20 @@ class ApiDataService {
         
         // Make sure we got JSON and it's an array
         guard let jsonArray = response.result.value as? [[String: Any]] else {
-            print("didn't get array of gists object as JSON from API")
+            print("didn't get array of object as JSON from API")
             return .failure(ApiManagerError.objectSerialization(reason:
                 "Did not get JSON dictionary in response"))
         }
         
-        // check for "message" errors in the JSON because this API does that
-        if let jsonDictionary = response.result.value as?[String: Any],
-            let errorMessage = jsonDictionary["message"] as? String {
-                return .failure(ApiManagerError.apiProvidedError(reason: errorMessage))
-            }
-        
         // turn JSON into Parts
-        let parts = jsonArray.compactMap { Part(json: $0) }
+        var parts = [Part]()
+        for item in jsonArray {
+            if let part = Part(json: item) {
+                parts.append(part)
+            }
+        }
+        print("From Data Service")
+        print(parts)
         return .success(parts)
     }
 }

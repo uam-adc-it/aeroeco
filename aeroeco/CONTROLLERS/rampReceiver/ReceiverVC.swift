@@ -27,6 +27,7 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.estimatedRowHeight = 80
         
         //TEST
+        print("DEBUGGER")
         ApiDataService.instance.printAllParts()
         //END TEST
     }
@@ -40,8 +41,14 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func loadParts() {
         ApiDataService.instance.fetchAllParts() {
             result in
+            print("FETCHED")
+            print(result)
             guard result.error == nil else {
-                self.handleLoadPartsError(result.error!)
+                if let error = result.error {
+                    self.handleLoadPartsError(error)
+                }
+                
+                
                 return
             }
             if let fetchedParts = result.value {
@@ -55,6 +62,14 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         //TODO: show error
     }
     
+    //MARK: SEGUE METHODS
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ReceiverTabController, let part = sender as? Part {
+            print(part.partNum)
+            defaults.set(part.partNum, forKey: "currRampPart")
+            viewController.part = part
+        }
+    }
     
     //MARK: DELEGATE METHODS
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -86,50 +101,39 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let hazmatCheck = partsArray[indexPath.row].is_hazmat
         let esdCheck = partsArray[indexPath.row].is_esd
         
-        
-        
         cell.lblPartNum.text = partsArray[indexPath.row].partNum
         cell.lblDesc.text = partsArray[indexPath.row].description
         cell.lblMSN.text = partsArray[indexPath.row].msn
         
-        if ammCheck! {
+        if ammCheck != nil {
             cell.lblAMM.textColor = UIColor.green
         }
         else {
             cell.lblAMM.textColor = UIColor.lightGray
         }
         
-        if priorityCheck! {
+        if priorityCheck != nil {
             cell.imgPriority.image = UIImage(named: "priority")
         }
         else {
             cell.imgPriority.image = UIImage(named: "no_priority")
         }
         
-        if hazmatCheck! {
+        if hazmatCheck != nil {
             cell.imgHazmat.image = UIImage(named: "hazmat")
         }
         else {
             cell.imgHazmat.image = UIImage(named: "hazmat_not")
         }
         
-        if esdCheck! {
+        if esdCheck != nil {
             cell.imgESD.image = UIImage(named: "esd")
         }
         else {
             cell.imgESD.image = UIImage(named: "esd_not")
         }
         
-        
         return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let viewController = segue.destination as? ReceiverTabController, let part = sender as? Part {
-            print(part.partNum!)
-            defaults.set(part.partNum!, forKey: "currRampPart")
-            viewController.part = part
-        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
