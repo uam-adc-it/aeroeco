@@ -6,7 +6,7 @@
 //  Copyright © 2018 Aerospace Disassembly Consortium. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Part {
     var db_id: Int

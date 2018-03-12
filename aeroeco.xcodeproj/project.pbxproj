@@ -44,6 +44,7 @@
 		52F5E88A204EC78C00DE859D /* RampNotesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E889204EC78C00DE859D /* RampNotesVC.swift */; };
 		52F5E88C204EC7E100DE859D /* RampRemovalTagVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */; };
 		52F5E88E204EC84000DE859D /* RampChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5E88D204EC84000DE859D /* RampChecklistVC.swift */; };
+		52F66DDF2055F99C006BBF37 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F66DDE2055F99C006BBF37 /* ProjectCell.swift */; };
 		C8BEA2F86A0989FD5C7A410F /* Pods_aeroeco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E346BAD018DE3C64E5BBD963 /* Pods_aeroeco.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		52F5E889204EC78C00DE859D /* RampNotesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampNotesVC.swift; sourceTree = "<group>"; };
 		52F5E88B204EC7E100DE859D /* RampRemovalTagVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampRemovalTagVC.swift; sourceTree = "<group>"; };
 		52F5E88D204EC84000DE859D /* RampChecklistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampChecklistVC.swift; sourceTree = "<group>"; };
+		52F66DDE2055F99C006BBF37 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		7F1953AE2DDC6D0F7E1D06A5 /* Pods-aeroeco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.debug.xcconfig"; sourceTree = "<group>"; };
 		8E3C710511832CF669D668DE /* Pods-aeroeco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroeco.release.xcconfig"; path = "Pods/Target Support Files/Pods-aeroeco/Pods-aeroeco.release.xcconfig"; sourceTree = "<group>"; };
 		B13886BE2188C698DF7F8EB5 /* Pods-aeroecoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-aeroecoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-aeroecoTests/Pods-aeroecoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				529FA36B2052FCBF0050F28A /* ProjectsVC.swift */,
+				52F66DDE2055F99C006BBF37 /* ProjectCell.swift */,
 			);
 			path = projects;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				52F5E880204EBF1E00DE859D /* ProfileVC.swift in Sources */,
 				52DAEAD120501330008BB38A /* ReceiverVC.swift in Sources */,
 				52F5E878204EBD2400DE859D /* ShippingVC.swift in Sources */,
+				52F66DDF2055F99C006BBF37 /* ProjectCell.swift in Sources */,
 				52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */,
 				52DAEAD3205015F0008BB38A /* RampPartsCell.swift in Sources */,
 				5282E8BF2051516200AAD142 /* PartsRouter.swift in Sources */,

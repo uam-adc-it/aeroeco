@@ -909,40 +909,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PROJECTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8x-LP-IAt">
-                                <rect key="frame" x="90" y="309" width="195" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2h-57-8VS" customClass="RoundedShadowButton" customModule="aeroeco" customModuleProvider="target">
-                                <rect key="frame" x="30" y="587" width="315" height="60"/>
-                                <color key="backgroundColor" name="AdcLiteGreen"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="7GT-BE-Jg5"/>
-                                    <constraint firstAttribute="width" constant="315" id="b8Y-mg-dFd"/>
-                                </constraints>
-                                <state key="normal" title="Done">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EHJ-HU-LnS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="projectCell" id="ebm-aD-WHY" customClass="ProjectCell" customModule="aeroeco" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ebm-aD-WHY" id="dFm-lt-rcS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="btnLoginWasPressed:" destination="NFg-xy-bMp" eventType="touchUpInside" id="U4o-Cm-HYx"/>
-                                    <action selector="dismissProjects:" destination="NAU-l3-tAK" eventType="touchUpInside" id="5dM-7P-ynp"/>
+                                    <outlet property="dataSource" destination="NAU-l3-tAK" id="s6l-gd-hMz"/>
+                                    <outlet property="delegate" destination="NAU-l3-tAK" id="G5H-iY-yfy"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" name="BaseBlue"/>
                         <constraints>
-                            <constraint firstItem="i2h-57-8VS" firstAttribute="centerX" secondItem="IOi-VW-JqA" secondAttribute="centerX" id="3uT-2R-DyW"/>
-                            <constraint firstItem="Etn-ka-jyV" firstAttribute="bottom" secondItem="i2h-57-8VS" secondAttribute="bottom" constant="20" id="UCY-yz-SM6"/>
+                            <constraint firstItem="EHJ-HU-LnS" firstAttribute="leading" secondItem="IOi-VW-JqA" secondAttribute="leading" id="QXO-lM-Qwb"/>
+                            <constraint firstItem="EHJ-HU-LnS" firstAttribute="top" secondItem="Etn-ka-jyV" secondAttribute="top" id="RSb-Dl-jVH"/>
+                            <constraint firstAttribute="trailing" secondItem="EHJ-HU-LnS" secondAttribute="trailing" id="b1X-oj-cua"/>
+                            <constraint firstItem="EHJ-HU-LnS" firstAttribute="bottom" secondItem="Etn-ka-jyV" secondAttribute="bottom" id="vKn-Sj-u5Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Etn-ka-jyV"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="EHJ-HU-LnS" id="J5K-CT-wpd"/>
+                        <segue destination="x0F-Lf-Ye0" kind="show" identifier="goToReceiverVC" id="XyJ-FH-hz1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Hf-TN-yE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="692" y="1635"/>
+            <point key="canvasLocation" x="692" y="1634.9325337331336"/>
         </scene>
         <!--Warehouse Receiving-->
         <scene sceneID="uxX-Iv-X2M">
@@ -1927,17 +1929,12 @@ AAAAAAAAAAAALHU
         <namedColor name="AdcLiteGreen">
             <color red="0.55299997329999995" green="0.77600002290000003" blue="0.24699999389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="AdcLiteGreen">
-            <color red="0.55299997329711914" green="0.77600002288818359" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="BaseBlue">
-            <color red="0.25900000333786011" green="0.37999999523162842" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="BaseBlue">
             <color red="0.25900000333786011" green="0.37999999523162842" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="XyJ-FH-hz1"/>
         <segue reference="byL-uc-Nux"/>
     </inferredMetricsTieBreakers>
 </document>
