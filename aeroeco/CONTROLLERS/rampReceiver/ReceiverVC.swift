@@ -22,7 +22,6 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         
         self.navigationItem.title = "N118UA"
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Projects", style: .plain, target: self, action: #selector(btnProjectsPressed(_:)))
 
         tableView.delegate = self
         tableView.dataSource = self
