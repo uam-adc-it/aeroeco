@@ -12,7 +12,7 @@ open class BadgedCell: UITableViewCell {
 
     public var badgeString: String = "" {
         didSet {
-            if badgeString == "" {
+            if badgeString == "" || badgeString == "0" {
                 badgeView.removeFromSuperview()
                 layoutSubviews()
             }

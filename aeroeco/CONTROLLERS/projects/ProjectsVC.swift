@@ -15,9 +15,9 @@ class ProjectsVC: UIViewController {
     var projects : [[String:String]] = [
         ["title" : "IT Solutions", "badge": "0"],
         ["title" : "N117UA", "badge": "0"],
-        ["title" : "N118UA", "badge": "0"],
+        ["title" : "N118UA", "badge": "7"],
         ["title" : "N121UA", "badge": "0"],
-        ["title" : "N171UA", "badge": "0"],
+        ["title" : "N171UA", "badge": "21"],
         ["title" : "N182UA", "badge": "0"],
         ["title" : "N700MP", "badge": "0"],
         ["title" : "Tupelo Tasks", "badge": "0"],
@@ -44,24 +44,7 @@ extension ProjectsVC: UITableViewDataSource {
         cell?.textLabel!.text = projects[indexPath.row]["title"]
         cell?.detailTextLabel?.text = projects[indexPath.row]["title"]
         cell?.badgeString = projects[indexPath.row]["badge"]!
-        
-        // Set accessory views for two badges
-        if(indexPath.row == 0) {
-            cell?.accessoryType = .disclosureIndicator
-        }
-        
-        if(indexPath.row == 1) {
-            cell?.badgeColor = .lightGray
-            cell?.badgeTextColor = .black
-            cell?.accessoryType = .checkmark
-        }
-        
-        // Set background colours for two badges
-        if(indexPath.row == 2) {
-            cell?.badgeColor = .orange
-        } else if(indexPath.row == 3) {
-            cell?.badgeColor = .red
-        }
+        cell?.badgeColor = .red
         
         return cell!
     }
