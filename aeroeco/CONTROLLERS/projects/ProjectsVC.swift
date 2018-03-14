@@ -12,23 +12,34 @@ class ProjectsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var projects : [[String:String]] = [
-        ["title" : "IT Solutions", "badge": "0"],
-        ["title" : "N117UA", "badge": "0"],
-        ["title" : "N118UA", "badge": "7"],
-        ["title" : "N121UA", "badge": "0"],
-        ["title" : "N171UA", "badge": "21"],
-        ["title" : "N182UA", "badge": "0"],
-        ["title" : "N700MP", "badge": "0"],
-        ["title" : "Tupelo Tasks", "badge": "0"],
-        ["title" : "UALUAM-7", "badge": "0"],
-        ["title" : "Verona Tasks", "badge": "0"]
-    ]
-
+    var projects = [Project]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let jsonUrlString = global.API_URL + "get_active_projects"
+        
+        guard let url = URL(string: jsonUrlString) else {
+            print("Error establishing server connection")
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) {
+            (data, rsp, err) in
+            guard let data = data else {
+                print("Error getting data from Server")
+                return
+            }
+            
+            do {
+                self.projects = try JSONDecoder().decode([Project].self, from: data)
+                //print(self.projects)
+            }
+            catch let jsonErr {
+                print("Error serializing json: ", jsonErr)
+            }
+        }.resume()
     }
-    
 }
 
 extension ProjectsVC: UITableViewDataSource {
@@ -37,16 +48,10 @@ extension ProjectsVC: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "BadgedCell", for: indexPath) as? BadgedCell
-        if cell == nil {
-            cell = BadgedCell(style: .default, reuseIdentifier: "BadgedCell");
-        }
-        cell?.textLabel!.text = projects[indexPath.row]["title"]
-        cell?.detailTextLabel?.text = projects[indexPath.row]["title"]
-        cell?.badgeString = projects[indexPath.row]["badge"]!
-        cell?.badgeColor = .red
-        
-        return cell!
+        print(projects[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProjectCell
+        cell.configureCell(project: projects[indexPath.row])
+        return cell
     }
 }
 

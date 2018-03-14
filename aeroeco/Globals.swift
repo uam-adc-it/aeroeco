@@ -9,7 +9,8 @@
 import UIKit
 
 class Global {
-    var API_URL: String = "https://www.my-uam.com/swift/"
+    var API_URL: String = "https://staging.movieplanes.com/swift/"
+    //var API_URL: String = "https://www.my-uam.com/swift/"
 }
 
 let global = Global()

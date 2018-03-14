@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		46126382B814EB03EDEE7A43 /* Pods_aeroecoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99AFC7D5E76A5A3BD1A672F /* Pods_aeroecoTests.framework */; };
 		5282E8BF2051516200AAD142 /* PartsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5282E8BE2051516200AAD142 /* PartsRouter.swift */; };
+		528697D920588F42009BF8E2 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528697D820588F42009BF8E2 /* Course.swift */; };
+		528697DB205890C1009BF8E2 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528697DA205890C1009BF8E2 /* Courses.swift */; };
+		528697DF2058952A009BF8E2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528697DE2058952A009BF8E2 /* Project.swift */; };
 		5289DF6C204DE67900388B5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289DF6B204DE67900388B5A /* AppDelegate.swift */; };
 		5289DF71204DE67900388B5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF6F204DE67900388B5A /* Main.storyboard */; };
 		5289DF76204DE67A00388B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5289DF74204DE67A00388B5A /* LaunchScreen.storyboard */; };
 		5289DF81204DE67A00388B5A /* aeroecoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5289DF80204DE67A00388B5A /* aeroecoTests.swift */; };
 		529FA36C2052FCBF0050F28A /* ProjectsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FA36B2052FCBF0050F28A /* ProjectsVC.swift */; };
 		52A19B792056CB8400A202C3 /* BadgedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A19B782056CB8400A202C3 /* BadgedCell.swift */; };
+		52A19B7B2056D4DC00A202C3 /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A19B7A2056D4DC00A202C3 /* ProjectCell.swift */; };
 		52A4FE2C204DE850006D1045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A4FE2B204DE850006D1045 /* Assets.xcassets */; };
 		52A4FE34204DE8CB006D1045 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52A4FE33204DE8CB006D1045 /* GoogleService-Info.plist */; };
 		52A4FE36204DE9A4006D1045 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4FE35204DE9A4006D1045 /* WelcomeVC.swift */; };
@@ -60,6 +64,9 @@
 
 /* Begin PBXFileReference section */
 		5282E8BE2051516200AAD142 /* PartsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsRouter.swift; sourceTree = "<group>"; };
+		528697D820588F42009BF8E2 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		528697DA205890C1009BF8E2 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
+		528697DE2058952A009BF8E2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		5289DF68204DE67800388B5A /* aeroeco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aeroeco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5289DF6B204DE67900388B5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5289DF70204DE67900388B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +77,7 @@
 		5289DF82204DE67A00388B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		529FA36B2052FCBF0050F28A /* ProjectsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsVC.swift; sourceTree = "<group>"; };
 		52A19B782056CB8400A202C3 /* BadgedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgedCell.swift; sourceTree = "<group>"; };
+		52A19B7A2056D4DC00A202C3 /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		52A4FE2B204DE850006D1045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52A4FE33204DE8CB006D1045 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		52A4FE35204DE9A4006D1045 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				529FA36B2052FCBF0050F28A /* ProjectsVC.swift */,
+				52A19B7A2056D4DC00A202C3 /* ProjectCell.swift */,
 			);
 			path = projects;
 			sourceTree = "<group>";
@@ -227,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				52DAEACE205009C2008BB38A /* Part.swift */,
+				528697D820588F42009BF8E2 /* Course.swift */,
+				528697DA205890C1009BF8E2 /* Courses.swift */,
+				528697DE2058952A009BF8E2 /* Project.swift */,
 			);
 			path = MODELS;
 			sourceTree = "<group>";
@@ -578,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F5E880204EBF1E00DE859D /* ProfileVC.swift in Sources */,
+				52A19B7B2056D4DC00A202C3 /* ProjectCell.swift in Sources */,
 				52DAEAD120501330008BB38A /* ReceiverVC.swift in Sources */,
 				52F5E878204EBD2400DE859D /* ShippingVC.swift in Sources */,
 				52F5E86F204EBBB100DE859D /* AdminVC.swift in Sources */,
@@ -598,6 +611,7 @@
 				52A4FE3A204E014B006D1045 /* SwitchboardVC.swift in Sources */,
 				52DAEACF205009C2008BB38A /* Part.swift in Sources */,
 				52F5E88C204EC7E100DE859D /* RampRemovalTagVC.swift in Sources */,
+				528697D920588F42009BF8E2 /* Course.swift in Sources */,
 				52DAEAD520501D21008BB38A /* ReceiverTabController.swift in Sources */,
 				52A4FE45204E0EE4006D1045 /* RoundedShadowView.swift in Sources */,
 				52F5E886204EC6C400DE859D /* RampPartVC.swift in Sources */,
@@ -605,10 +619,12 @@
 				52A4FE36204DE9A4006D1045 /* WelcomeVC.swift in Sources */,
 				52F5E888204EC73600DE859D /* RampPhotosVC.swift in Sources */,
 				52A4FE4B204E1007006D1045 /* FirebaseDataService.swift in Sources */,
+				528697DB205890C1009BF8E2 /* Courses.swift in Sources */,
 				52A4FE38204DFE3E006D1045 /* LoginVC.swift in Sources */,
 				52F5E872204EBC2A00DE859D /* ManagerVC.swift in Sources */,
 				52A4FE41204E0E0A006D1045 /* RoundedShadowButton.swift in Sources */,
 				52A19B792056CB8400A202C3 /* BadgedCell.swift in Sources */,
+				528697DF2058952A009BF8E2 /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
