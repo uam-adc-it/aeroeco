@@ -90,10 +90,14 @@ class ApiDataService {
         
         // turn JSON into Parts
         var projects = [Project]()
+        var unsorted = [Project]()
         for item in jsonArray {
             if let project = Project(json: item) {
-                projects.append(project)
+                unsorted.append(project)
             }
+        }
+        projects = unsorted.sorted {
+            $0.badge_count! > $1.badge_count!
         }
         return .success(projects)
     }
