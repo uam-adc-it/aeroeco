@@ -11,12 +11,13 @@ import Alamofire
 import SwiftyJSON
 import SVProgressHUD
 
-class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ReceiverVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
     var partsArray = [Part]()
     let defaults = UserDefaults.standard
+    var project: Project?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,8 +75,10 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             viewController.part = part
         }
     }
-    
-    //MARK: DELEGATE METHODS
+
+}
+
+extension ReceiverVC: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         var numberOfSections: Int = 0
         if partsArray.count > 0 {
@@ -139,11 +142,12 @@ class ReceiverVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
+}
+
+extension ReceiverVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let sel_part = partsArray[indexPath.row]
         performSegue(withIdentifier: "goToTabController", sender: sel_part)
     }
-
 }

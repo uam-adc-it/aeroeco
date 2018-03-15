@@ -6,7 +6,7 @@
 //  Copyright © 2018 Aerospace Disassembly Consortium. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import Alamofire
 
 enum ApiManagerError: Error {
@@ -28,10 +28,26 @@ class ApiDataService {
         }
     }
     
+    func printAllProjects() -> Void {
+        Alamofire.request(ApiRouter.getAllProjects()).responseString { response in
+            if let receivedString = response.result.value {
+                print(receivedString)
+            }
+        }
+    }
+    
     func fetchAllParts(completionHandler: @escaping (Result<[Part]>) -> Void) {
         Alamofire.request(ApiRouter.getAllParts())
             .responseJSON { response in
                 let result = self.partsArrayFromResponse(response: response)
+                completionHandler(result)
+        }
+    }
+    
+    func fetchAllProjects(completionHandler: @escaping (Result<[Project]>) -> Void) {
+        Alamofire.request(ApiRouter.getAllProjects())
+            .responseJSON { response in
+                let result = self.projectsArrayFromResponse(response: response)
                 completionHandler(result)
             }
     }
@@ -57,5 +73,28 @@ class ApiDataService {
             }
         }
         return .success(parts)
+    }
+    
+    private func projectsArrayFromResponse(response: DataResponse<Any>) -> Result<[Project]> {
+        guard response.result.error == nil else {
+            print(response.result.error!)
+            return .failure(ApiManagerError.network(error: response.result.error!))
+        }
+        
+        // Make sure we got JSON and it's an array
+        guard let jsonArray = response.result.value as? [[String: Any]] else {
+            print("didn't get array of object as JSON from API")
+            return .failure(ApiManagerError.objectSerialization(reason:
+                "Did not get JSON dictionary in response"))
+        }
+        
+        // turn JSON into Parts
+        var projects = [Project]()
+        for item in jsonArray {
+            if let project = Project(json: item) {
+                projects.append(project)
+            }
+        }
+        return .success(projects)
     }
 }

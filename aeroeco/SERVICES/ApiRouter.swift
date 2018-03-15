@@ -10,13 +10,16 @@ import Foundation
 import Alamofire
 
 enum ApiRouter: URLRequestConvertible {
-    static let baseURLString = "https://staging.movieplanes.com/swift/"
+    static let baseURLString = global.API_URL
     
+    case getAllProjects()
     case getAllParts()
     
     func asURLRequest() throws -> URLRequest {
         var method: HTTPMethod {
             switch self {
+            case .getAllProjects:
+                return .get
             case .getAllParts:
                 return .get
             }
@@ -25,6 +28,8 @@ enum ApiRouter: URLRequestConvertible {
         let url: URL = {
             let relativePath: String
             switch self {
+            case .getAllProjects():
+                relativePath = "get_active_projects"
             case .getAllParts():
                 relativePath = "get_project_receivables"
             }
@@ -36,6 +41,8 @@ enum ApiRouter: URLRequestConvertible {
         
         let params: ([String: Any]?) = {
             switch self {
+            case .getAllProjects:
+                return nil
             case .getAllParts:
                 return nil
             }

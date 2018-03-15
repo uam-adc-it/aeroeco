@@ -37,6 +37,7 @@ class Part {
             let partNum = json["part_number"] as? String else {
                 return nil
         }
+
         let can_8130 = json["can_8130"] as? Bool
         let description = json["description"] as? String
         let has_amm = json["has_amm"] as? Bool

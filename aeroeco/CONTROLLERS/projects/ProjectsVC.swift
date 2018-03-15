@@ -11,47 +11,87 @@ import UIKit
 class ProjectsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    
+    let defaults = UserDefaults.standard
     var projects = [Project]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let jsonUrlString = global.API_URL + "get_active_projects"
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        guard let url = URL(string: jsonUrlString) else {
-            print("Error establishing server connection")
+        tableView.rowHeight = 48
+        tableView.estimatedRowHeight = 48
+        
+        //TEST
+        //print("DEBUGGER")
+        //ApiDataService.instance.printAllProjects()
+        //END TEST
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadProjects()
+    }
+    
+    //MARK: DATA RETRIEVAL METHODS
+    func loadProjects() {
+        ApiDataService.instance.fetchAllProjects() {
+            result in
+            guard result.error == nil else {
+                if let error = result.error {
+                    self.handleLoadProjectsError(error)
+                }
             return
         }
-        
-        URLSession.shared.dataTask(with: url) {
-            (data, rsp, err) in
-            guard let data = data else {
-                print("Error getting data from Server")
-                return
+            if let fetchedProjects = result.value {
+                self.projects = fetchedProjects
             }
-            
-            do {
-                self.projects = try JSONDecoder().decode([Project].self, from: data)
-                //print(self.projects)
-            }
-            catch let jsonErr {
-                print("Error serializing json: ", jsonErr)
-            }
-        }.resume()
+            self.tableView.reloadData()
+        }
+    }
+    
+    func handleLoadProjectsError(_ error: Error) {
+        //TODO: show error
+    }
+    
+    //MARK: SEGUE METHODS
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? ReceiverVC, let project = sender as? Project {
+            print(project.name)
+            defaults.set(project.name, forKey: "currProject")
+            viewController.project = project
+        }
     }
 }
 
 extension ProjectsVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return projects.count
+    func numberOfSections(in tableView: UITableView) -> Int {
+        var numberOfSections: Int = 0
+        if projects.count > 0 {
+            tableView.separatorStyle = .singleLine
+            numberOfSections = 1
+        }
+        else {
+            let noDataLabel: UILabel = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+            noDataLabel.text = "Loading projects from server ..."
+            noDataLabel.textColor = UIColor.black
+            noDataLabel.textAlignment = .center
+            tableView.backgroundView = noDataLabel
+            tableView.separatorStyle = .none
+        }
+        return numberOfSections
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.projects.count
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print(projects[indexPath.row])
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProjectCell
-        cell.configureCell(project: projects[indexPath.row])
+        cell.configureCell()
         return cell
+        //return UITableViewCell()
     }
 }
 
@@ -61,3 +101,4 @@ extension ProjectsVC: UITableViewDelegate {
         performSegue(withIdentifier: "goToReceiverVC", sender: self)
     }
 }
+
