@@ -103,43 +103,7 @@ extension ReceiverVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rampPartCell", for: indexPath) as! RampPartsCell
-        let priorityCheck = partsArray[indexPath.row].is_priority
-        let ammCheck = partsArray[indexPath.row].has_amm
-        let hazmatCheck = partsArray[indexPath.row].is_hazmat
-        let esdCheck = partsArray[indexPath.row].is_esd
-        
-        cell.lblPartNum.text = partsArray[indexPath.row].partNum
-        cell.lblDesc.text = partsArray[indexPath.row].description
-        cell.lblMSN.text = partsArray[indexPath.row].msn
-        
-        if priorityCheck! {
-            cell.imgPriority.image = UIImage(named: "priority")
-        }
-        else {
-            cell.imgPriority.image = UIImage(named: "no_priority")
-        }
-        
-        if ammCheck! {
-            cell.lblAMM.textColor = UIColor.green
-        }
-        else {
-            cell.lblAMM.textColor = UIColor.lightGray
-        }
-        
-        if hazmatCheck! {
-            cell.imgHazmat.image = UIImage(named: "hazmat")
-        }
-        else {
-            cell.imgHazmat.image = UIImage(named: "hazmat_not")
-        }
-        
-        if esdCheck! {
-            cell.imgESD.image = UIImage(named: "esd")
-        }
-        else {
-            cell.imgESD.image = UIImage(named: "esd_not")
-        }
-        
+        cell.configureCell(part: partsArray[indexPath.row])
         return cell
     }
 }
