@@ -15,9 +15,19 @@ class ProjectCell: UITableViewCell {
     @IBOutlet weak var vBadge: UIView!
     @IBOutlet weak var lblBadgeCount: UILabel!
     
-    func configureCell() {
-        lblProjectName!.text = "Example Project" //projects[indexPath.row].name
-        imgIcon!.image = UIImage(named: "clerical")
+    func configureCell(project: Project) {
+        if(project.badge_count! > 0) {
+            
+            lblBadgeCount!.text = "\(project.badge_count ?? 0)"
+        }
+        else {
+            vBadge.isHidden = true
+            lblBadgeCount.isHidden = true
+        }
+        
+        lblProjectName!.text = project.name
+        imgIcon!.image = UIImage(named: project.avatar!)
+        
     }
     
     override func awakeFromNib() {

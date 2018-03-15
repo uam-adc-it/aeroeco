@@ -89,7 +89,7 @@ extension ProjectsVC: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ProjectCell
-        cell.configureCell()
+        cell.configureCell(project: projects[indexPath.row])
         return cell
         //return UITableViewCell()
     }
